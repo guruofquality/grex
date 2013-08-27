@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Noise Source</name>
-    <key>ex_noise_source</key>
+    <key>grex_noise_source</key>
     <import>import gras</import>
     <make>gras.make('/grex/noise_source_$(type)', $seed)
 self.$(id).set_waveform($wave)

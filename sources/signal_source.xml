@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Signal Source</name>
-    <key>ex_signal_source</key>
+    <key>grex_signal_source</key>
     <import>import gras</import>
     <make>gras.make('/grex/signal_source_$(type)')
 self.$(id).set_waveform($wave)

@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Multiply Const</name>
-    <key>ex_multiply_const</key>
+    <key>grex_multiply_const</key>
     <import>import gras</import>
     <make>gras.make('/grex/multiply_const_v_$(type)', $value)</make>
     <callback>set_const($value)</callback>

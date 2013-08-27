@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: ORC Block</name>
-    <key>ex_orc_block</key>
+    <key>grex_orc_block</key>
     <import>import gras</import>
     <make>gras.make('/grex/orc_block')
 self.$(id).set_program($kernel_name, open($program_source).read())

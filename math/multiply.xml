@@ -7,7 +7,7 @@
  -->
 <block>
     <name>Ex: Multiply</name>
-    <key>ex_multiply</key>
+    <key>grex_multiply</key>
     <import>import gras</import>
     <make>gras.make('/grex/multiply_v_$(type)', $vlen)
 #if $preload()

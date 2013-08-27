@@ -7,7 +7,7 @@
  -->
 <block>
     <name>Ex: Divide</name>
-    <key>ex_divide</key>
+    <key>grex_divide</key>
     <import>import gras</import>
     <make>gras.make('/grex/divide_v_$(type)', $vlen)
 #if $preload()

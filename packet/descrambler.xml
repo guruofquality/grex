@@ -6,7 +6,7 @@
 -->
 <block>
     <name>Ex: Descrambler</name>
-    <key>ex_descrambler</key>
+    <key>grex_descrambler</key>
     <import>import gras</import>
     <make>gras.make('/grex/descrambler')
 self.$(id).set_poly($poly)

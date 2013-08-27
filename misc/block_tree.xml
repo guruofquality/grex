@@ -13,31 +13,31 @@ Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
     <name></name> <!-- Blank for Root Name -->
     <cat>
         <name>GREX</name>
-        <block>ex_signal_source</block>
-        <block>ex_noise_source</block>
-        <block>ex_add</block>
-        <block>ex_add_const</block>
-        <block>ex_subtract</block>
-        <block>ex_multiply</block>
-        <block>ex_multiply_const</block>
-        <block>ex_divide</block>
-        <block>ex_socket_message</block>
-        <block>ex_datagram_to_stream</block>
-        <block>ex_stream_to_datagram</block>
-        <block>ex_stream_selector</block>
-        <block>ex_delay</block>
-        <block>ex_tuntap</block>
-        <block>ex_time_align</block>
-        <block>ex_packet_framer</block>
-        <block>ex_packet_deframer</block>
-        <block>ex_burst_tagger</block>
-        <block>ex_serializer</block>
-        <block>ex_deserializer</block>
-        <block>ex_scrambler</block>
-        <block>ex_descrambler</block>
-        <block>ex_query_server</block>
-        <block>ex_opencl_block</block>
-        <block>ex_orc_block</block>
-        <block>ex_clang_block</block>
+        <block>grex_signal_source</block>
+        <block>grex_noise_source</block>
+        <block>grex_add</block>
+        <block>grex_add_const</block>
+        <block>grex_subtract</block>
+        <block>grex_multiply</block>
+        <block>grex_multiply_const</block>
+        <block>grex_divide</block>
+        <block>grex_socket_message</block>
+        <block>grex_datagram_to_stream</block>
+        <block>grex_stream_to_datagram</block>
+        <block>grex_stream_selector</block>
+        <block>grex_delay</block>
+        <block>grex_tuntap</block>
+        <block>grex_time_align</block>
+        <block>grex_packet_framer</block>
+        <block>grex_packet_deframer</block>
+        <block>grex_burst_tagger</block>
+        <block>grex_serializer</block>
+        <block>grex_deserializer</block>
+        <block>grex_scrambler</block>
+        <block>grex_descrambler</block>
+        <block>grex_query_server</block>
+        <block>grex_opencl_block</block>
+        <block>grex_orc_block</block>
+        <block>grex_clang_block</block>
     </cat>
 </cat>

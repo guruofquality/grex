@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Delay</name>
-    <key>ex_delay</key>
+    <key>grex_delay</key>
     <import>import gras</import>
     <make>gras.make('/grex/delay', $item_size)
 self.$(id).set_delay($delay)

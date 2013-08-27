@@ -6,7 +6,7 @@
 -->
 <block>
     <name>Ex: Packet Deframer</name>
-    <key>ex_packet_deframer</key>
+    <key>grex_packet_deframer</key>
     <import>import gras</import>
     <make>gras.make('/grex/packet_deframer',
     access_code=$access_code,

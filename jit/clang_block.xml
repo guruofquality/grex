@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Clang Block</name>
-    <key>ex_clang_block</key>
+    <key>grex_clang_block</key>
     <import>import gras</import>
     <import>import ctypes</import>
     <make>None

@@ -6,7 +6,7 @@
 -->
 <block>
     <name>Ex: Serializer</name>
-    <key>ex_serializer</key>
+    <key>grex_serializer</key>
     <import>import gras</import>
     <make>gras.make('/grex/serializer', $mtu, $sync)</make>
     <param>

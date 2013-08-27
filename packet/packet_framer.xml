@@ -6,7 +6,7 @@
 -->
 <block>
     <name>Ex: Packet Framer</name>
-    <key>ex_packet_framer</key>
+    <key>grex_packet_framer</key>
     <import>import gras</import>
     <make>gras.make('/grex/packet_framer',
     samples_per_symbol=$samples_per_symbol,

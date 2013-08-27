@@ -1535,10 +1535,10 @@
     </param>
   </block>
   <block>
-    <key>ex_noise_source</key>
+    <key>grex_noise_source</key>
     <param>
       <key>id</key>
-      <value>ex_noise_source_0</value>
+      <value>grex_noise_source_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1578,10 +1578,10 @@
     </param>
   </block>
   <block>
-    <key>ex_signal_source</key>
+    <key>grex_signal_source</key>
     <param>
       <key>id</key>
-      <value>ex_signal_source_0</value>
+      <value>grex_signal_source_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1621,10 +1621,10 @@
     </param>
   </block>
   <block>
-    <key>ex_packet_framer</key>
+    <key>grex_packet_framer</key>
     <param>
       <key>id</key>
-      <value>ex_packet_framer_0</value>
+      <value>grex_packet_framer_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1687,10 +1687,10 @@
     </param>
   </block>
   <block>
-    <key>ex_burst_tagger</key>
+    <key>grex_burst_tagger</key>
     <param>
       <key>id</key>
-      <value>ex_burst_tagger_0</value>
+      <value>grex_burst_tagger_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1710,10 +1710,10 @@
     </param>
   </block>
   <block>
-    <key>ex_multiply_const</key>
+    <key>grex_multiply_const</key>
     <param>
       <key>id</key>
-      <value>ex_multiply_const_0</value>
+      <value>grex_multiply_const_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1741,10 +1741,10 @@
     </param>
   </block>
   <block>
-    <key>ex_packet_deframer</key>
+    <key>grex_packet_deframer</key>
     <param>
       <key>id</key>
-      <value>ex_packet_deframer_0</value>
+      <value>grex_packet_deframer_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1768,10 +1768,10 @@
     </param>
   </block>
   <block>
-    <key>ex_datagram_to_stream</key>
+    <key>grex_datagram_to_stream</key>
     <param>
       <key>id</key>
-      <value>ex_datagram_to_stream_0</value>
+      <value>grex_datagram_to_stream_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1882,10 +1882,10 @@
     </param>
   </block>
   <block>
-    <key>ex_add</key>
+    <key>grex_add</key>
     <param>
       <key>id</key>
-      <value>ex_add_0</value>
+      <value>grex_add_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1913,10 +1913,10 @@
     </param>
   </block>
   <block>
-    <key>ex_stream_to_datagram</key>
+    <key>grex_stream_to_datagram</key>
     <param>
       <key>id</key>
-      <value>ex_stream_to_datagram_0</value>
+      <value>grex_stream_to_datagram_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1940,20 +1940,20 @@
     </param>
   </block>
   <connection>
-    <source_block_id>ex_packet_framer_0</source_block_id>
+    <source_block_id>grex_packet_framer_0</source_block_id>
     <sink_block_id>digital_gmsk_mod_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_gmsk_mod_0</source_block_id>
-    <sink_block_id>ex_burst_tagger_0</sink_block_id>
+    <sink_block_id>grex_burst_tagger_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_gmsk_demod_0</source_block_id>
-    <sink_block_id>ex_packet_deframer_0</sink_block_id>
+    <sink_block_id>grex_packet_deframer_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1964,50 +1964,50 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_packet_deframer_0</source_block_id>
-    <sink_block_id>ex_datagram_to_stream_0</sink_block_id>
+    <source_block_id>grex_packet_deframer_0</source_block_id>
+    <sink_block_id>grex_datagram_to_stream_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_stream_to_datagram_0</source_block_id>
-    <sink_block_id>ex_packet_framer_0</sink_block_id>
+    <source_block_id>grex_stream_to_datagram_0</source_block_id>
+    <sink_block_id>grex_packet_framer_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_signal_source_0</source_block_id>
-    <sink_block_id>ex_add_0</sink_block_id>
+    <source_block_id>grex_signal_source_0</source_block_id>
+    <sink_block_id>grex_add_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_noise_source_0</source_block_id>
-    <sink_block_id>ex_add_0</sink_block_id>
+    <source_block_id>grex_noise_source_0</source_block_id>
+    <sink_block_id>grex_add_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_datagram_to_stream_0</source_block_id>
+    <source_block_id>grex_datagram_to_stream_0</source_block_id>
     <sink_block_id>wxgui_fftsink2_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_multiply_const_0</source_block_id>
+    <source_block_id>grex_multiply_const_0</source_block_id>
     <sink_block_id>uhd_usrp_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_burst_tagger_0</source_block_id>
-    <sink_block_id>ex_multiply_const_0</sink_block_id>
+    <source_block_id>grex_burst_tagger_0</source_block_id>
+    <sink_block_id>grex_multiply_const_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ex_add_0</source_block_id>
-    <sink_block_id>ex_stream_to_datagram_0</sink_block_id>
+    <source_block_id>grex_add_0</source_block_id>
+    <sink_block_id>grex_stream_to_datagram_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

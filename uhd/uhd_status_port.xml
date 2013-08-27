@@ -6,7 +6,7 @@
  -->
 <block>
     <name>UHD: Status Port</name>
-    <key>ex_uhd_status_port</key>
+    <key>grex_uhd_status_port</key>
     <category>UHD</category>
     <import>import gras</import>
     <import>from gnuradio import uhd</import>

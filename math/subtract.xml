@@ -7,7 +7,7 @@
  -->
 <block>
     <name>Ex: Subtract</name>
-    <key>ex_subtract</key>
+    <key>grex_subtract</key>
     <import>import gras</import>
     <make>gras.make('/grex/subtract_v_$(type)', $vlen)
 #if $preload()

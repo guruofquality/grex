@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Stream Selector</name>
-    <key>ex_stream_selector</key>
+    <key>grex_stream_selector</key>
     <import>import gras</import>
     <make>gras.make('/grex/stream_selector', $item_size)
 self.$(id).set_paths($paths)

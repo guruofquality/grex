@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Socket Msg</name>
-    <key>ex_socket_message</key>
+    <key>grex_socket_message</key>
     <import>import gras</import>
     <make>gras.make('/grex/socket_message', $type, $addr, $port, $mtu)</make>
     <param>

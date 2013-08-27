@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Burst Tagger</name>
-    <key>ex_burst_tagger</key>
+    <key>grex_burst_tagger</key>
     <import>import gras</import>
     <make>gras.make('/grex/burst_tagger', $sps)</make>
     <param>

@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: TUN/TAP</name>
-    <key>ex_tuntap</key>
+    <key>grex_tuntap</key>
     <throttle>1</throttle>
     <import>import gras</import>
     <make>gras.make('/grex/tuntap', $dev)</make>

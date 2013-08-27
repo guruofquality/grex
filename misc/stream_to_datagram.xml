@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: Stream2DGram</name>
-    <key>ex_stream_to_datagram</key>
+    <key>grex_stream_to_datagram</key>
     <import>import gras</import>
     <make>gras.make('/grex/stream_to_datagram', $item_size, $mtu)</make>
     <param>

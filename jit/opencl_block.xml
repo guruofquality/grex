@@ -6,7 +6,7 @@
  -->
 <block>
     <name>Ex: OpenCL Block</name>
-    <key>ex_opencl_block</key>
+    <key>grex_opencl_block</key>
     <import>import gras</import>
     <make>gras.make('/grex/opencl_block', $dev_type)
 #for i, s in enumerate($input_sizes())

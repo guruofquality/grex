@@ -6,7 +6,7 @@
 -->
 <block>
     <name>Ex: Deserializer</name>
-    <key>ex_deserializer</key>
+    <key>grex_deserializer</key>
     <import>import gras</import>
     <make>gras.make('/grex/deserializer', $recover)</make>
     <param>
