@@ -12,7 +12,7 @@ Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 <cat>
     <name></name> <!-- Blank for Root Name -->
     <cat>
-        <name>Ex</name>
+        <name>GREX</name>
         <block>ex_signal_source</block>
         <block>ex_noise_source</block>
         <block>ex_add</block>
