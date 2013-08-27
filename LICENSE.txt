@@ -1,15 +1,15 @@
 ########################################################################
-## GrEx license info
+## GREX license info
 ########################################################################
 
-GrEx is a cornucopia, or rather hodgepodge of processing blocks.
+GREX is a cornucopia, or rather hodgepodge of processing blocks.
 Each block carries with it an individual or set of copyright holders;
 and set of library dependencies, each with their own unique licensing:
 
 -----------------------------------------
 -- GRAS dependencies
 -----------------------------------------
-All processing blocks in GrEx depend on GRAS,
+All processing blocks in GREX depend on GRAS,
 the GNU Radio Advanced Scheduler.
 And thus subject to the GRAS licensing.
 https://github.com/guruofquality/gras/wiki
