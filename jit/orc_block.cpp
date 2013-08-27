@@ -17,7 +17,7 @@
 struct OrcBlock : gras::Block
 {
     OrcBlock(void):
-        gras::Block("GrExtras OrcBlock")
+        gras::Block("GrEx OrcBlock")
     {
         _kernel_factor = 1.0;
         _production_factor = 1.0;
@@ -234,4 +234,4 @@ gras::Block *make_orc_block(void)
 
 #endif //HAVE_ORC
 
-GRAS_REGISTER_FACTORY("/extras/orc_block", make_orc_block)
+GRAS_REGISTER_FACTORY("/ex/orc_block", make_orc_block)

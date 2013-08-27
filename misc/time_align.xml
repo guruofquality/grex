@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <!--
 ###################################################
-## Extras: time alignment block
+## GrEx: time alignment block
 ###################################################
  -->
 <block>
     <name>Ex: Time Align</name>
-    <key>extras_time_align</key>
+    <key>ex_time_align</key>
     <import>import gras</import>
-    <make>gras.make('/extras/time_align', $item_size)</make>
+    <make>gras.make('/ex/time_align', $item_size)</make>
     <param>
         <name>Item Size</name>
         <key>item_size</key>

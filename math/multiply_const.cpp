@@ -17,7 +17,7 @@ template <typename type>
 struct MultiplyConst : gras::Block
 {
     MultiplyConst(const std::vector<type> &vec, const bool vec_mode = true):
-        gras::Block("GrExtras MultiplyConst")
+        gras::Block("GrEx MultiplyConst")
     {
         this->input_config(0).item_size = sizeof(type)*vec.size();
         this->output_config(0).item_size = sizeof(type)*vec.size();
@@ -153,12 +153,12 @@ static gras::Block *make_multiply_const_v_ ## suffix(const std::vector<type > &v
 { \
     return new MultiplyConst<type>(vec, true); \
 } \
-GRAS_REGISTER_FACTORY("/extras/multiply_const_v_" #suffix, make_multiply_const_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/ex/multiply_const_v_" #suffix, make_multiply_const_v_ ## suffix) \
 static gras::Block *make_multiply_const_ ## suffix(const type &value) \
 { \
     return new MultiplyConst<type>(std::vector<type>(1, value), false); \
 } \
-GRAS_REGISTER_FACTORY("/extras/multiply_const_" #suffix, make_multiply_const_ ## suffix)
+GRAS_REGISTER_FACTORY("/ex/multiply_const_" #suffix, make_multiply_const_ ## suffix)
 
 make_factory_function(fc32_fc32, std::complex<float>)
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>)

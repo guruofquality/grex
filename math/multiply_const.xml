@@ -6,9 +6,9 @@
  -->
 <block>
     <name>Ex: Multiply Const</name>
-    <key>extras_multiply_const</key>
+    <key>ex_multiply_const</key>
     <import>import gras</import>
-    <make>gras.make('/extras/multiply_const_v_$(type)', $value)</make>
+    <make>gras.make('/ex/multiply_const_v_$(type)', $value)</make>
     <callback>set_const($value)</callback>
     <param>
         <name>IO Type</name>

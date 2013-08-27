@@ -1,5 +1,5 @@
 ########################################################################
-## GrExtras Misc Blocks
+## GrEx Misc Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
@@ -10,9 +10,9 @@ GRAS_TOOL(
         delay.cpp delay.xml
         query_server.xml
         block_tree.xml
-    TARGET extras_misc
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_misc
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################

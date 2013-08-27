@@ -12,7 +12,7 @@ typedef boost::int64_t int64_t;
 struct TimeAlign : gras::Block
 {
     TimeAlign(const size_t itemsize):
-        gras::Block("GrExtras TimeAlign"),
+        gras::Block("GrEx TimeAlign"),
         _rate(1e6)
     {
         this->input_config(0).item_size = itemsize;
@@ -106,4 +106,4 @@ void TimeAlign::work(const InputItems &ins, const OutputItems &)
     }
 }
 
-GRAS_REGISTER_FACTORY1("/extras/time_align", TimeAlign, size_t)
+GRAS_REGISTER_FACTORY1("/ex/time_align", TimeAlign, size_t)

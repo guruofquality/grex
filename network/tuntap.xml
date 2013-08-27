@@ -6,10 +6,10 @@
  -->
 <block>
     <name>Ex: TUN/TAP</name>
-    <key>extras_tuntap</key>
+    <key>ex_tuntap</key>
     <throttle>1</throttle>
     <import>import gras</import>
-    <make>gras.make('/extras/tuntap', $dev)</make>
+    <make>gras.make('/ex/tuntap', $dev)</make>
     <param>
         <name>Device</name>
         <key>dev</key>

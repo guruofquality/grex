@@ -6,9 +6,9 @@
 -->
 <block>
     <name>Ex: Packet Deframer</name>
-    <key>extras_packet_deframer</key>
+    <key>ex_packet_deframer</key>
     <import>import gras</import>
-    <make>gras.make('/extras/packet_deframer',
+    <make>gras.make('/ex/packet_deframer',
     access_code=$access_code,
     threshold=$threshold,
 )</make>

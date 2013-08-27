@@ -85,7 +85,7 @@ static gras::PacketMsg serialize_buff(const size_t seq, const size_t sid, const 
 struct Serializer : gras::Block
 {
     Serializer(const size_t mtu, const bool sync):
-        gras::Block("GrExtras Serializer"),
+        gras::Block("GrEx Serializer"),
         _mtu((mtu? mtu : 1400) & ~3), _sync(sync)
     {
         //We might configure this item size in the future;
@@ -169,4 +169,4 @@ struct Serializer : gras::Block
     std::vector<size_t> _seqs;
 };
 
-GRAS_REGISTER_FACTORY2("/extras/serializer", Serializer, size_t, bool)
+GRAS_REGISTER_FACTORY2("/ex/serializer", Serializer, size_t, bool)

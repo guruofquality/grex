@@ -77,7 +77,7 @@ static void unpack_buffer(const gras::SBuffer &packet, size_t &seq, size_t &sid,
 struct Deserializer : gras::Block
 {
     Deserializer(const bool recover):
-        gras::Block("GrExtras Deserializer"),
+        gras::Block("GrEx Deserializer"),
         _recover(recover),
         _num_outs(0) //set by notify
     {
@@ -206,4 +206,4 @@ void Deserializer::work(const InputItems &, const OutputItems &)
     if (_accum_buff.length == 0) _accum_buff.reset();
 }
 
-GRAS_REGISTER_FACTORY1("/extras/deserializer", Deserializer, bool)
+GRAS_REGISTER_FACTORY1("/ex/deserializer", Deserializer, bool)

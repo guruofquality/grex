@@ -6,38 +6,38 @@ Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 
 <!--
 ###################################################
-##Block Tree for GR Extras
+##Block Tree for GrEx
 ###################################################
  -->
 <cat>
     <name></name> <!-- Blank for Root Name -->
     <cat>
-        <name>Extras</name>
-        <block>extras_signal_source</block>
-        <block>extras_noise_source</block>
-        <block>extras_add</block>
-        <block>extras_add_const</block>
-        <block>extras_subtract</block>
-        <block>extras_multiply</block>
-        <block>extras_multiply_const</block>
-        <block>extras_divide</block>
-        <block>extras_socket_message</block>
-        <block>extras_datagram_to_stream</block>
-        <block>extras_stream_to_datagram</block>
-        <block>extras_stream_selector</block>
-        <block>extras_delay</block>
-        <block>extras_tuntap</block>
-        <block>extras_time_align</block>
-        <block>extras_packet_framer</block>
-        <block>extras_packet_deframer</block>
-        <block>extras_burst_tagger</block>
-        <block>extras_serializer</block>
-        <block>extras_deserializer</block>
-        <block>extras_scrambler</block>
-        <block>extras_descrambler</block>
-        <block>extras_query_server</block>
-        <block>extras_opencl_block</block>
-        <block>extras_orc_block</block>
-        <block>extras_clang_block</block>
+        <name>Ex</name>
+        <block>ex_signal_source</block>
+        <block>ex_noise_source</block>
+        <block>ex_add</block>
+        <block>ex_add_const</block>
+        <block>ex_subtract</block>
+        <block>ex_multiply</block>
+        <block>ex_multiply_const</block>
+        <block>ex_divide</block>
+        <block>ex_socket_message</block>
+        <block>ex_datagram_to_stream</block>
+        <block>ex_stream_to_datagram</block>
+        <block>ex_stream_selector</block>
+        <block>ex_delay</block>
+        <block>ex_tuntap</block>
+        <block>ex_time_align</block>
+        <block>ex_packet_framer</block>
+        <block>ex_packet_deframer</block>
+        <block>ex_burst_tagger</block>
+        <block>ex_serializer</block>
+        <block>ex_deserializer</block>
+        <block>ex_scrambler</block>
+        <block>ex_descrambler</block>
+        <block>ex_query_server</block>
+        <block>ex_opencl_block</block>
+        <block>ex_orc_block</block>
+        <block>ex_clang_block</block>
     </cat>
 </cat>

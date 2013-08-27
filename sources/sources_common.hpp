@@ -1,7 +1,7 @@
 // Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 
-#ifndef INCLUDED_GREXTRAS_LIB_SOURCES_COMMON_HPP
-#define INCLUDED_GREXTRAS_LIB_SOURCES_COMMON_HPP
+#ifndef INCLUDED_GREX_LIB_SOURCES_COMMON_HPP
+#define INCLUDED_GREX_LIB_SOURCES_COMMON_HPP
 
 #include <complex>
 
@@ -32,4 +32,4 @@ void complex128_to_num(const complex128 &in, type &out)
     out = type(in.real());
 }
 
-#endif //INCLUDED_GREXTRAS_LIB_SOURCES_COMMON_HPP
+#endif //INCLUDED_GREX_LIB_SOURCES_COMMON_HPP

@@ -2,7 +2,7 @@
 # Project setup
 ########################################################################
 cmake_minimum_required(VERSION 2.8)
-project(grextras CXX C)
+project(grex CXX C)
 enable_testing()
 
 #various compiler flags

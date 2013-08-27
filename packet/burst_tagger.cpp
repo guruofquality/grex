@@ -8,7 +8,7 @@
 struct BurstTagger : gras::Block
 {
     BurstTagger(const size_t sps):
-        gras::Block("GrExtras BurstTagger"),
+        gras::Block("GrEx BurstTagger"),
         _sps(sps)
     {
         this->input_config(0).item_size = 8;
@@ -52,4 +52,4 @@ struct BurstTagger : gras::Block
     const size_t _sps;
 };
 
-GRAS_REGISTER_FACTORY1("/extras/burst_tagger", BurstTagger, size_t)
+GRAS_REGISTER_FACTORY1("/ex/burst_tagger", BurstTagger, size_t)

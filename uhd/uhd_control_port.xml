@@ -6,11 +6,11 @@
  -->
 <block>
     <name>UHD: Control Port</name>
-    <key>extras_uhd_control_port</key>
+    <key>ex_uhd_control_port</key>
     <category>UHD</category>
     <import>import gras</import>
     <import>from gnuradio import uhd</import>
-    <make>gras.make('/extras/uhd_control_port', $addr)
+    <make>gras.make('/ex/uhd_control_port', $addr)
 try: self.adopt_element("$(id)", self.$(id))
 except Exception as ex: print ex</make>
     <param>

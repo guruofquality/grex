@@ -17,7 +17,7 @@ template <typename type>
 struct NoiseSource : gras::Block
 {
     NoiseSource(const long seed):
-        gras::Block("GrExtras Noise Source"),
+        gras::Block("GrEx Noise Source"),
         _index(0),
         _table(wave_table_size),
         _offset(0.0), _scalar(1.0), _factor(9.0),
@@ -148,7 +148,7 @@ static gras::Block *make_noise_source_ ## suffix(const long &seed) \
 { \
     return new NoiseSource<type>(seed); \
 } \
-GRAS_REGISTER_FACTORY("/extras/noise_source_" #suffix, make_noise_source_ ## suffix)
+GRAS_REGISTER_FACTORY("/ex/noise_source_" #suffix, make_noise_source_ ## suffix)
 
 make_factory_function(fc32, std::complex<float>)
 make_factory_function(sc32, std::complex<boost::int32_t>)

@@ -7,9 +7,9 @@
  -->
 <block>
     <name>Ex: Add</name>
-    <key>extras_add</key>
+    <key>ex_add</key>
     <import>import gras</import>
-    <make>gras.make('/extras/add_v_$(type)', $vlen)
+    <make>gras.make('/ex/add_v_$(type)', $vlen)
 #if $preload()
 self.$(id).set_preload($preload)
 #end if</make>

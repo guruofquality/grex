@@ -1,15 +1,18 @@
 ########################################################################
-GRExtras - Advanced GNU Radio Blocks
+GrEx - Advanced GNU Radio Blocks
 ########################################################################
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Extremely useful documentation:
-https://github.com/guruofquality/grextras/wiki
+https://github.com/guruofquality/grex/wiki
+
+Summary of blocks:
+https://github.com/guruofquality/grex/wiki/Blocks
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Build and install
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-This link gets you the scheduler, GNU Radio, and GrExtras:
+This link gets you the scheduler, GNU Radio, and GrEx:
 https://github.com/guruofquality/gras/wiki/Build

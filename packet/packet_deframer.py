@@ -2,20 +2,20 @@
 # Copyright 1980-2013 Free Software Foundation, Inc.
 # Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 # 
-# This file is part of GrExtras
+# This file is part of GrEx
 # 
-# GrExtras is free software; you can redistribute it and/or modify
+# GrEx is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3, or (at your option)
 # any later version.
 # 
-# GrExtras is distributed in the hope that it will be useful,
+# GrEx is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 # 
 # You should have received a copy of the GNU General Public License
-# along with GrExtras; see the file COPYING.  If not, write to
+# along with GrEx; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 #
@@ -64,7 +64,7 @@ class PacketDeframer(gras.HierBlock):
         except ImportError:
             import gnuradio.digital as gr_digital
         self.correlator = gr_digital.correlate_access_code_bb(access_code, threshold)
-        self.framer_sink = gras.make('/extras/framer_sink_1')
+        self.framer_sink = gras.make('/ex/framer_sink_1')
         self._queue_to_datagram = _queue_to_datagram()
         self.connect(self, self.correlator, self.framer_sink, self._queue_to_datagram, self)
 
@@ -117,4 +117,4 @@ class _queue_to_datagram(gras.Block):
             print 'f',
             self.post_output_msg(0, gras.PacketMsg())
 
-gras.register_factory("/extras/packet_deframer", PacketDeframer)
+gras.register_factory("/ex/packet_deframer", PacketDeframer)

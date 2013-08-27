@@ -7,7 +7,7 @@
 struct StreamSelector : gras::Block
 {
     StreamSelector(const size_t itemsize):
-        gras::Block("GrExtras StreamSelector")
+        gras::Block("GrEx StreamSelector")
     {
         this->input_config(0).item_size = itemsize;
         this->output_config(0).item_size = itemsize;
@@ -68,4 +68,4 @@ struct StreamSelector : gras::Block
     std::vector<int> _paths;
 };
 
-GRAS_REGISTER_FACTORY1("/extras/stream_selector", StreamSelector, size_t)
+GRAS_REGISTER_FACTORY1("/ex/stream_selector", StreamSelector, size_t)

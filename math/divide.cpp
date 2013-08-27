@@ -13,7 +13,7 @@ template <typename type>
 struct Divide : gras::Block
 {
     Divide(const size_t vlen):
-        gras::Block("GrExtras Divide"),
+        gras::Block("GrEx Divide"),
         _vlen(vlen)
     {
         this->input_config(0).item_size = sizeof(type)*_vlen;
@@ -84,12 +84,12 @@ static gras::Block *make_divide_v_ ## suffix(const size_t &vlen) \
 { \
     return new Divide<type>(vlen); \
 } \
-GRAS_REGISTER_FACTORY("/extras/divide_v_" #suffix, make_divide_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/ex/divide_v_" #suffix, make_divide_v_ ## suffix) \
 static gras::Block *make_divide_ ## suffix(void) \
 { \
     return new Divide<type>(1); \
 } \
-GRAS_REGISTER_FACTORY("/extras/divide_" #suffix, make_divide_ ## suffix)
+GRAS_REGISTER_FACTORY("/ex/divide_" #suffix, make_divide_ ## suffix)
 
 make_factory_function(fc32_fc32, std::complex<float>)
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>)

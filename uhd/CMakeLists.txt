@@ -15,15 +15,15 @@ else()
 endif()
 
 ########################################################################
-## GrExtras UHD Blocks
+## GrEx UHD Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
         uhd_control_port.cpp uhd_control_port.xml
         uhd_status_port.cpp uhd_status_port.xml
-    TARGET extras_uhd
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_uhd
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################
@@ -38,6 +38,6 @@ endif()
 GRAS_SWIG_TOOL(
     SOURCE UHDTypes.i
     TARGET UHDTypes
-    DIRECTORY extras
-    COMPONENT extras
+    DIRECTORY ex
+    COMPONENT ex
 )

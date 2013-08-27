@@ -6,9 +6,9 @@
 -->
 <block>
     <name>Ex: Scrambler</name>
-    <key>extras_scrambler</key>
+    <key>ex_scrambler</key>
     <import>import gras</import>
-    <make>gras.make('/extras/scrambler')
+    <make>gras.make('/ex/scrambler')
 self.$(id).set_poly($poly)
 self.$(id).set_seed($seed)
 self.$(id).set_mode($mode)

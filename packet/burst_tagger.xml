@@ -6,9 +6,9 @@
  -->
 <block>
     <name>Ex: Burst Tagger</name>
-    <key>extras_burst_tagger</key>
+    <key>ex_burst_tagger</key>
     <import>import gras</import>
-    <make>gras.make('/extras/burst_tagger', $sps)</make>
+    <make>gras.make('/ex/burst_tagger', $sps)</make>
     <param>
         <name>Samples per symbol</name>
         <key>sps</key>

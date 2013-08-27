@@ -6,9 +6,9 @@
 -->
 <block>
     <name>Ex: Deserializer</name>
-    <key>extras_deserializer</key>
+    <key>ex_deserializer</key>
     <import>import gras</import>
-    <make>gras.make('/extras/deserializer', $recover)</make>
+    <make>gras.make('/ex/deserializer', $recover)</make>
     <param>
         <name>Recovery</name>
         <key>recover</key>

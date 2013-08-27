@@ -1,8 +1,8 @@
 //copy of random api from gr core
-//its easiest to copy this into grextras to keep things compiling
+//its easiest to copy this into grex to keep things compiling
 
-#ifndef INCLUDED_GREXTRAS_NOISE_SOURCE_RANDOM_HPP
-#define INCLUDED_GREXTRAS_NOISE_SOURCE_RANDOM_HPP
+#ifndef INCLUDED_GREX_NOISE_SOURCE_RANDOM_HPP
+#define INCLUDED_GREX_NOISE_SOURCE_RANDOM_HPP
 
 #include <complex>
 
@@ -254,4 +254,4 @@ inline float gr_random::rayleigh()
   return sqrt(-2.0 * log(ran1()));
 }
 
-#endif //INCLUDED_GREXTRAS_NOISE_SOURCE_RANDOM_HPP
+#endif //INCLUDED_GREX_NOISE_SOURCE_RANDOM_HPP

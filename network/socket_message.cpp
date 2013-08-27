@@ -37,4 +37,4 @@ gras::HierBlock *make_socket_message(
     throw std::runtime_error("SocketMessage::make fail - unknown type " + type);
 }
 
-GRAS_REGISTER_FACTORY("/extras/socket_message", make_socket_message)
+GRAS_REGISTER_FACTORY("/ex/socket_message", make_socket_message)

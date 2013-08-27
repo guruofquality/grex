@@ -16,7 +16,7 @@ template <typename type>
 struct Add : gras::Block
 {
     Add(const size_t vlen):
-        gras::Block("GrExtras Add"),
+        gras::Block("GrEx Add"),
         _vlen(vlen)
     {
         this->input_config(0).item_size = sizeof(type)*_vlen;
@@ -103,12 +103,12 @@ static gras::Block *make_add_v_ ## suffix(const size_t &vlen) \
 { \
     return new Add<type>(vlen*factor); \
 } \
-GRAS_REGISTER_FACTORY("/extras/add_v_" #suffix, make_add_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/ex/add_v_" #suffix, make_add_v_ ## suffix) \
 static gras::Block *make_add_ ## suffix(void) \
 { \
     return new Add<type>(1*factor); \
 } \
-GRAS_REGISTER_FACTORY("/extras/add_" #suffix, make_add_ ## suffix)
+GRAS_REGISTER_FACTORY("/ex/add_" #suffix, make_add_ ## suffix)
 
 make_factory_function(fc32_fc32, float, 2) //factor of 2 to reuse float converter
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>, 1)

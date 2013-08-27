@@ -15,7 +15,7 @@ else()
 endif()
 
 ########################################################################
-## GrExtras Math Blocks
+## GrEx Math Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
@@ -25,9 +25,9 @@ GRAS_TOOL(
         multiply.cpp multiply.xml
         add_const.cpp add_const.xml
         multiply_const.cpp multiply_const.xml
-    TARGET extras_math
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_math
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################

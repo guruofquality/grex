@@ -6,9 +6,9 @@
 -->
 <block>
     <name>Ex: Serializer</name>
-    <key>extras_serializer</key>
+    <key>ex_serializer</key>
     <import>import gras</import>
-    <make>gras.make('/extras/serializer', $mtu, $sync)</make>
+    <make>gras.make('/ex/serializer', $mtu, $sync)</make>
     <param>
         <name>MTU</name>
         <key>mtu</key>

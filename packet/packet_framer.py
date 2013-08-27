@@ -2,20 +2,20 @@
 # Copyright 1980-2013 Free Software Foundation, Inc.
 # Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 # 
-# This file is part of GrExtras
+# This file is part of GrEx
 # 
-# GrExtras is free software; you can redistribute it and/or modify
+# GrEx is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3, or (at your option)
 # any later version.
 # 
-# GrExtras is distributed in the hope that it will be useful,
+# GrEx is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 # 
 # You should have received a copy of the GNU General Public License
-# along with GrExtras; see the file COPYING.  If not, write to
+# along with GrEx; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 #
@@ -59,7 +59,7 @@ class PacketFramer(gras.Block):
 
         gras.Block.__init__(
             self,
-            name = "GrExtras PacketFramer",
+            name = "GrEx PacketFramer",
             in_sig = [numpy.uint8],
             out_sig = [numpy.uint8],
         )
@@ -125,4 +125,4 @@ class PacketFramer(gras.Block):
                     self.post_output_tag(0, tag)
             except: pass
 
-gras.register_factory("/extras/packet_framer", PacketFramer)
+gras.register_factory("/ex/packet_framer", PacketFramer)

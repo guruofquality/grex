@@ -1,14 +1,18 @@
 ########################################################################
-## GrExtras license info
+## GrEx license info
 ########################################################################
 
-Copyright (C) 2011-2013 by Josh Blum
+GrEx is a cornucopia, or rather hodgepodge of processing blocks.
+Each block carries with it an individual or set of copyright holders;
+and set of library dependencies, each with their own unique licensing:
 
-GrExtras source shall be used only with the GNU Radio Advanced Scheduler,
-and is subject to the licensing terms of the GNU Radio Advanced Scheduler.
+-----------------------------------------
+-- GRAS dependencies
+-----------------------------------------
+All processing blocks in GrEx depend on GRAS,
+the GNU Radio Advanced Scheduler.
+And thus subject to the GRAS licensing.
 https://github.com/guruofquality/gras/wiki
-
-Other licensing terms will apply based on the compilation dependencies:
 
 -----------------------------------------
 -- VOLK dependencies

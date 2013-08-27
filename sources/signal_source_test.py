@@ -2,20 +2,20 @@
 # Copyright 2004-2012 Free Software Foundation, Inc.
 # Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 #
-# This file is part of GrExtras
+# This file is part of GrEx
 #
-# GrExtras is free software; you can redistribute it and/or modify
+# GrEx is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 3, or (at your option)
 # any later version.
 #
-# GrExtras is distributed in the hope that it will be useful,
+# GrEx is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with GrExtras; see the file COPYING.  If not, write to
+# along with GrEx; see the file COPYING.  If not, write to
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 #
@@ -35,7 +35,7 @@ class test_signal_source(unittest.TestCase):
 
     def test_signal_source_f32(self):
         expected_result = (1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5)
-        src1 = gras.make('/extras/signal_source_f32')
+        src1 = gras.make('/ex/signal_source_f32')
         src1.set_frequency(0)
         src1.set_waveform("CONST")
         src1.set_amplitude(1.5)

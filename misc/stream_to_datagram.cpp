@@ -8,7 +8,7 @@
 struct Stream2Datagram : gras::Block
 {
     Stream2Datagram(const size_t itemsize, const size_t mtu):
-        gras::Block("GrExtras Stream2Datagram"),
+        gras::Block("GrEx Stream2Datagram"),
         _mtu(itemsize*(mtu/itemsize)) //ensure mtu is a multiple
     {
         //setup the input for streaming
@@ -53,4 +53,4 @@ struct Stream2Datagram : gras::Block
     const size_t _mtu;
 };
 
-GRAS_REGISTER_FACTORY2("/extras/stream_to_datagram", Stream2Datagram, size_t, size_t)
+GRAS_REGISTER_FACTORY2("/ex/stream_to_datagram", Stream2Datagram, size_t, size_t)

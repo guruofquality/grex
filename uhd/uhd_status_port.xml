@@ -6,11 +6,11 @@
  -->
 <block>
     <name>UHD: Status Port</name>
-    <key>extras_uhd_status_port</key>
+    <key>ex_uhd_status_port</key>
     <category>UHD</category>
     <import>import gras</import>
     <import>from gnuradio import uhd</import>
-    <make>gras.make('/extras/uhd_status_port', $addr)
+    <make>gras.make('/ex/uhd_status_port', $addr)
 #for $sensor in $sensors
 self.$(id).add_sensor($sensor)
 #end for</make>

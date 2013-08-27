@@ -14,7 +14,7 @@ template <typename type>
 struct AddConst : gras::Block
 {
     AddConst(const std::vector<type> &vec, const bool vec_mode = true):
-        gras::Block("GrExtras AddConst")
+        gras::Block("GrEx AddConst")
     {
         this->input_config(0).item_size = sizeof(type)*vec.size();
         this->output_config(0).item_size = sizeof(type)*vec.size();
@@ -112,12 +112,12 @@ static gras::Block *make_add_const_v_ ## suffix(const std::vector<type > &vec) \
 { \
     return new AddConst<type>(vec, true); \
 } \
-GRAS_REGISTER_FACTORY("/extras/add_const_v_" #suffix, make_add_const_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/ex/add_const_v_" #suffix, make_add_const_v_ ## suffix) \
 static gras::Block *make_add_const_ ## suffix(const type &value) \
 { \
     return new AddConst<type>(std::vector<type>(1, value), false); \
 } \
-GRAS_REGISTER_FACTORY("/extras/add_const_" #suffix, make_add_const_ ## suffix)
+GRAS_REGISTER_FACTORY("/ex/add_const_" #suffix, make_add_const_ ## suffix)
 
 make_factory_function(fc32_fc32, std::complex<float>)
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>)

@@ -7,9 +7,9 @@
  -->
 <block>
     <name>Ex: Subtract</name>
-    <key>extras_subtract</key>
+    <key>ex_subtract</key>
     <import>import gras</import>
-    <make>gras.make('/extras/subtract_v_$(type)', $vlen)
+    <make>gras.make('/ex/subtract_v_$(type)', $vlen)
 #if $preload()
 self.$(id).set_preload($preload)
 #end if</make>

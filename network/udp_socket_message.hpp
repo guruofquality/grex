@@ -7,7 +7,7 @@
 struct UDPSocketReceiver : gras::Block
 {
     UDPSocketReceiver(const size_t mtu):
-        gras::Block("GrExtras UDPSocketReceiver")
+        gras::Block("GrEx UDPSocketReceiver")
     {
         this->output_config(0).reserve_items = mtu;
     }
@@ -56,7 +56,7 @@ struct UDPSocketReceiver : gras::Block
 struct UDPSocketSender : gras::Block
 {
     UDPSocketSender(void):
-        gras::Block("GrExtras UDPSocketSender")
+        gras::Block("GrEx UDPSocketSender")
     {
         //NOP
     }
@@ -87,7 +87,7 @@ struct UDPSocketMessage : gras::HierBlock
         const std::string &port,
         const size_t mtu
     ):
-        gras::HierBlock("GrExtras UDPSocketMessage")
+        gras::HierBlock("GrEx UDPSocketMessage")
     {
         asio::ip::udp::resolver resolver(_io_service);
         asio::ip::udp::resolver::query query(asio::ip::udp::v4(), addr, port);

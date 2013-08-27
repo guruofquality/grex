@@ -1,5 +1,5 @@
 ########################################################################
-## GrExtras Packet Blocks
+## GrEx Packet Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
@@ -9,9 +9,9 @@ GRAS_TOOL(
         packet_framer.py packet_framer.xml
         packet_deframer.py packet_deframer.xml
         framer_sink.cpp #helper block for packet deframer
-    TARGET extras_packet
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_packet
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################

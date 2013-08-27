@@ -34,16 +34,16 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND GRAS_TOOL_LIBRARIES ${Boost_LIBRARIES})
 
 ########################################################################
-## GrExtras JIT Blocks
+## GrEx JIT Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
         orc_block.cpp orc_block.xml
         opencl_block.cpp opencl_block.xml
         clang_block.xml
-    TARGET extras_jit
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_jit
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################

@@ -16,7 +16,7 @@ template <typename type>
 struct SignalSource : gras::Block
 {
     SignalSource(void):
-        gras::Block("GrExtras SignalSource"),
+        gras::Block("GrEx SignalSource"),
         _index(0), _step(0),
         _table(wave_table_size),
         _offset(0.0), _scalar(1.0),
@@ -148,7 +148,7 @@ static gras::Block *make_signal_source_ ## suffix(void) \
 { \
     return new SignalSource<type>(); \
 } \
-GRAS_REGISTER_FACTORY("/extras/signal_source_" #suffix, make_signal_source_ ## suffix)
+GRAS_REGISTER_FACTORY("/ex/signal_source_" #suffix, make_signal_source_ ## suffix)
 
 make_factory_function(fc32, std::complex<float>)
 make_factory_function(sc32, std::complex<boost::int32_t>)

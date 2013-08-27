@@ -74,7 +74,7 @@ int tun_alloc(char *dev, int flags = IFF_TAP | IFF_NO_PI) {
 struct Datagram2Filedes : gras::Block
 {
     Datagram2Filedes(const int fd):
-        gras::Block("GrExtras Datagram2Filedes"),
+        gras::Block("GrEx Datagram2Filedes"),
         _fd(fd)
     {
         //NOP
@@ -102,7 +102,7 @@ struct Datagram2Filedes : gras::Block
 struct Filedes2Datagram : gras::Block
 {
     Filedes2Datagram(const int fd):
-        gras::Block("GrExtras Filedes2Datagram"),
+        gras::Block("GrEx Filedes2Datagram"),
         _fd(fd)
     {
         //setup the output for messages only
@@ -157,7 +157,7 @@ struct Filedes2Datagram : gras::Block
 struct TunTap : gras::HierBlock
 {
     TunTap(const int fd, const std::string &dev_name):
-        gras::HierBlock("GrExtras TunTap"),
+        gras::HierBlock("GrEx TunTap"),
         _fd(fd),
         _dev_name(dev_name)
     {
@@ -220,4 +220,4 @@ gras::HierBlock *make_tuntap(const std::string &)
 
 #endif //is a linux
 
-GRAS_REGISTER_FACTORY("/extras/tuntap", make_tuntap)
+GRAS_REGISTER_FACTORY("/ex/tuntap", make_tuntap)

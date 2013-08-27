@@ -1,7 +1,7 @@
 // Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 
-#ifndef INCLUDED_GREXTRAS_SERIALIZE_COMMON_HPP
-#define INCLUDED_GREXTRAS_SERIALIZE_COMMON_HPP
+#ifndef INCLUDED_GREX_SERIALIZE_COMMON_HPP
+#define INCLUDED_GREX_SERIALIZE_COMMON_HPP
 
 #include <gras/tags.hpp>
 #include <boost/cstdint.hpp>
@@ -41,4 +41,4 @@ static const size_t MAX_PKT_BYTES = 128*1024;
     throw std::runtime_error(std::string("ASSERT FAIL ") + #x); \
 }}
 
-#endif //INCLUDED_GREXTRAS_SERIALIZE_COMMON_HPP
+#endif //INCLUDED_GREX_SERIALIZE_COMMON_HPP

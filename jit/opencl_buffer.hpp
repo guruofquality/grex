@@ -1,7 +1,7 @@
 // Copyright (C) by Josh Blum. See LICENSE.txt for licensing information.
 
-#ifndef INCLUDED_GREXTRAS_LIB_OPENCL_BUFFER_HPP
-#define INCLUDED_GREXTRAS_LIB_OPENCL_BUFFER_HPP
+#ifndef INCLUDED_GREX_LIB_OPENCL_BUFFER_HPP
+#define INCLUDED_GREX_LIB_OPENCL_BUFFER_HPP
 
 /***********************************************************************
  * buffer table for sbuffer referencing
@@ -194,4 +194,4 @@ bool OpenClBufferQueue::empty(void) const
     return _queue.empty();
 }
 
-#endif //INCLUDED_GREXTRAS_LIB_OPENCL_BUFFER_HPP
+#endif //INCLUDED_GREX_LIB_OPENCL_BUFFER_HPP

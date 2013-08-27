@@ -7,9 +7,9 @@
  -->
 <block>
     <name>Ex: Multiply</name>
-    <key>extras_multiply</key>
+    <key>ex_multiply</key>
     <import>import gras</import>
-    <make>gras.make('/extras/multiply_v_$(type)', $vlen)
+    <make>gras.make('/ex/multiply_v_$(type)', $vlen)
 #if $preload()
 self.$(id).set_preload($preload)
 #end if</make>

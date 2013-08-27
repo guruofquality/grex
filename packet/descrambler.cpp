@@ -11,7 +11,7 @@
 struct Descrambler : gras::Block
 {
     Descrambler(void):
-        gras::Block("GrExtras Scrambler"),
+        gras::Block("GrEx Scrambler"),
         _polynom(1), _seed_value(1)
     {
         std::memset(&_lfsr, 0, sizeof(_lfsr));
@@ -153,4 +153,4 @@ void Descrambler::work(const InputItems &ins, const OutputItems &outs)
     }
 }
 
-GRAS_REGISTER_FACTORY0("/extras/descrambler", Descrambler)
+GRAS_REGISTER_FACTORY0("/ex/descrambler", Descrambler)

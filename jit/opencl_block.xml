@@ -6,9 +6,9 @@
  -->
 <block>
     <name>Ex: OpenCL Block</name>
-    <key>extras_opencl_block</key>
+    <key>ex_opencl_block</key>
     <import>import gras</import>
-    <make>gras.make('/extras/opencl_block', $dev_type)
+    <make>gras.make('/ex/opencl_block', $dev_type)
 #for i, s in enumerate($input_sizes())
 self.$(id).set_input_size($i, $s)
 #end for

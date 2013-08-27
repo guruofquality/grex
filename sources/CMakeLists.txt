@@ -1,13 +1,13 @@
 ########################################################################
-## GrExtras Sources Blocks
+## GrEx Sources Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
         signal_source.cpp signal_source.xml
         noise_source.cpp noise_source.xml
-    TARGET extras_sources
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_sources
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################

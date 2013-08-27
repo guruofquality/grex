@@ -7,7 +7,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND GRAS_TOOL_LIBRARIES ${Boost_LIBRARIES})
 
 ########################################################################
-## GrExtras Network Blocks
+## GrEx Network Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES
@@ -15,9 +15,9 @@ GRAS_TOOL(
         serializer.cpp serializer.xml
         socket_message.cpp socket_message.xml
         tuntap.cpp tuntap.xml
-    TARGET extras_network
-    DIRECTORY extras
-    COMPONENT extras
+    TARGET ex_network
+    DIRECTORY ex
+    COMPONENT ex
 )
 
 ########################################################################

@@ -126,7 +126,7 @@ static cl::Context make_context(const cl_device_type cl_dev_type, cl::Platform &
  * Block constructor
  **********************************************************************/
 OpenClBlock::OpenClBlock(const std::string &dev_type):
-    gras::Block("GrExtras OpenClBlock"),
+    gras::Block("GrEx OpenClBlock"),
     _extra_cl_buffer_allocs(0)
 {
 
@@ -394,4 +394,4 @@ static gras::Block *make_opencl_block(const std::string &)
 
 #endif //HAVE_OPENCL
 
-GRAS_REGISTER_FACTORY("/extras/opencl_block", make_opencl_block)
+GRAS_REGISTER_FACTORY("/ex/opencl_block", make_opencl_block)

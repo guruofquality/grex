@@ -9,7 +9,7 @@
 struct Datagram2Stream : gras::Block
 {
     Datagram2Stream(const size_t itemsize):
-        gras::Block("GrExtras Datagram2Stream")
+        gras::Block("GrEx Datagram2Stream")
     {
         //setup the output for streaming
         this->output_config(0).item_size = itemsize;
@@ -44,4 +44,4 @@ struct Datagram2Stream : gras::Block
     }
 };
 
-GRAS_REGISTER_FACTORY1("/extras/datagram_to_stream", Datagram2Stream, size_t)
+GRAS_REGISTER_FACTORY1("/ex/datagram_to_stream", Datagram2Stream, size_t)

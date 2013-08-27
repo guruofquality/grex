@@ -6,9 +6,9 @@
  -->
 <block>
     <name>Ex: Delay</name>
-    <key>extras_delay</key>
+    <key>ex_delay</key>
     <import>import gras</import>
-    <make>gras.make('/extras/delay', $item_size)
+    <make>gras.make('/ex/delay', $item_size)
 self.$(id).set_delay($delay)
 </make>
     <callback>self.$(id).set_delay($delay)</callback>
