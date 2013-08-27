@@ -39,11 +39,11 @@ class test_packet(unittest.TestCase):
         self.tb = None
 
     def test_simple_loopback(self):
-        framer = gras.make('/ex/packet_framer',
+        framer = gras.make('/grex/packet_framer',
             samples_per_symbol = 2,
             bits_per_symbol = 1,
         )
-        deframer = gras.make('/ex/packet_deframer')
+        deframer = gras.make('/grex/packet_deframer')
 
         src_data = tuple(numpy.random.randint(-1024, 1024, 11)) #40 bytes + padding
         src = TestUtils.VectorSource(numpy.int32, src_data)
@@ -52,8 +52,8 @@ class test_packet(unittest.TestCase):
         from gnuradio import gr
         unpack = gr.packed_to_unpacked_bb(1, gr.GR_MSB_FIRST)
 
-        s2d = gras.make('/ex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
-        d2s = gras.make('/ex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)
+        s2d = gras.make('/grex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
+        d2s = gras.make('/grex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)
 
         self.tb.connect(src, s2d, framer, unpack, deframer, d2s, dst)
 
@@ -93,29 +93,29 @@ class test_packet(unittest.TestCase):
             log=False,
         )
 
-        framer = gras.make('/ex/packet_framer',
+        framer = gras.make('/grex/packet_framer',
             samples_per_symbol = sps,
             bits_per_symbol = 1,
         )
 
-        burst_tagger = gras.make('/ex/burst_tagger', sps)
+        burst_tagger = gras.make('/grex/burst_tagger', sps)
 
-        deframer = gras.make('/ex/packet_deframer')
+        deframer = gras.make('/grex/packet_deframer')
 
         src_data = tuple(numpy.random.randint(-1024, 1024, 11)) #40 bytes + padding
         src = TestUtils.VectorSource(numpy.int32, src_data)
         dst = TestUtils.VectorSink(numpy.int32)
 
-        s2d = gras.make('/ex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
-        d2s = gras.make('/ex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)
+        s2d = gras.make('/grex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
+        d2s = gras.make('/grex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)
 
-        delay = gras.make('/ex/delay', numpy.dtype(numpy.complex64).itemsize)
+        delay = gras.make('/grex/delay', numpy.dtype(numpy.complex64).itemsize)
         delay.set_delay(73) #sample delay
 
         #inject noise into the system
-        noise = gras.make('/ex/noise_source_fc32', -1)
+        noise = gras.make('/grex/noise_source_fc32', -1)
         noise.set_amplitude(0.05)
-        add = gras.make('/ex/add_fc32_fc32')
+        add = gras.make('/grex/add_fc32_fc32')
         self.tb.connect(noise, (add, 1))
 
         self.tb.connect(src, s2d, framer, mod, burst_tagger, delay, add, demod, deframer, d2s, dst)

@@ -9,7 +9,7 @@
     <key>ex_tuntap</key>
     <throttle>1</throttle>
     <import>import gras</import>
-    <make>gras.make('/ex/tuntap', $dev)</make>
+    <make>gras.make('/grex/tuntap', $dev)</make>
     <param>
         <name>Device</name>
         <key>dev</key>

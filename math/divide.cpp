@@ -84,12 +84,12 @@ static gras::Block *make_divide_v_ ## suffix(const size_t &vlen) \
 { \
     return new Divide<type>(vlen); \
 } \
-GRAS_REGISTER_FACTORY("/ex/divide_v_" #suffix, make_divide_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/grex/divide_v_" #suffix, make_divide_v_ ## suffix) \
 static gras::Block *make_divide_ ## suffix(void) \
 { \
     return new Divide<type>(1); \
 } \
-GRAS_REGISTER_FACTORY("/ex/divide_" #suffix, make_divide_ ## suffix)
+GRAS_REGISTER_FACTORY("/grex/divide_" #suffix, make_divide_ ## suffix)
 
 make_factory_function(fc32_fc32, std::complex<float>)
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>)

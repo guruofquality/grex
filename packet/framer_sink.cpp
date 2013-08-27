@@ -239,4 +239,4 @@ void digital_framer_sink_1::work(const InputItems &ins, const OutputItems &)
   return;
 }
 
-GRAS_REGISTER_FACTORY0("/ex/framer_sink_1", digital_framer_sink_1)
+GRAS_REGISTER_FACTORY0("/grex/framer_sink_1", digital_framer_sink_1)

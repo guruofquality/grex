@@ -125,12 +125,12 @@ static gras::Block *make_multiply_v_ ## suffix(const size_t &vlen) \
 { \
     return new Multiply<type>(vlen); \
 } \
-GRAS_REGISTER_FACTORY("/ex/multiply_v_" #suffix, make_multiply_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/grex/multiply_v_" #suffix, make_multiply_v_ ## suffix) \
 static gras::Block *make_multiply_ ## suffix(void) \
 { \
     return new Multiply<type>(1); \
 } \
-GRAS_REGISTER_FACTORY("/ex/multiply_" #suffix, make_multiply_ ## suffix)
+GRAS_REGISTER_FACTORY("/grex/multiply_" #suffix, make_multiply_ ## suffix)
 
 make_factory_function(fc32_fc32, std::complex<float>)
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>)

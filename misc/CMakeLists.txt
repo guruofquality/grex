@@ -10,9 +10,9 @@ GRAS_TOOL(
         delay.cpp delay.xml
         query_server.xml
         block_tree.xml
-    TARGET ex_misc
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_misc
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################

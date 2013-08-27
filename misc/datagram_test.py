@@ -19,8 +19,8 @@ class test_datagram(unittest.TestCase):
         src = TestUtils.VectorSource(numpy.int32, src_data)
         dst = TestUtils.VectorSink(numpy.int32)
 
-        s2d = gras.make('/ex/stream_to_datagram', numpy.dtype(numpy.float32).itemsize, 0)
-        d2s = gras.make('/ex/datagram_to_stream', numpy.dtype(numpy.float32).itemsize)
+        s2d = gras.make('/grex/stream_to_datagram', numpy.dtype(numpy.float32).itemsize, 0)
+        d2s = gras.make('/grex/datagram_to_stream', numpy.dtype(numpy.float32).itemsize)
 
         self.tb.connect(src, s2d, d2s, dst)
         self.tb.run()

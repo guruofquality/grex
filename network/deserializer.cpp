@@ -206,4 +206,4 @@ void Deserializer::work(const InputItems &, const OutputItems &)
     if (_accum_buff.length == 0) _accum_buff.reset();
 }
 
-GRAS_REGISTER_FACTORY1("/ex/deserializer", Deserializer, bool)
+GRAS_REGISTER_FACTORY1("/grex/deserializer", Deserializer, bool)

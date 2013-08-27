@@ -21,9 +21,9 @@ GRAS_TOOL(
     SOURCES
         uhd_control_port.cpp uhd_control_port.xml
         uhd_status_port.cpp uhd_status_port.xml
-    TARGET ex_uhd
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_uhd
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################
@@ -38,6 +38,6 @@ endif()
 GRAS_SWIG_TOOL(
     SOURCE UHDTypes.i
     TARGET UHDTypes
-    DIRECTORY ex
-    COMPONENT ex
+    DIRECTORY grex
+    COMPONENT grex
 )

@@ -8,7 +8,7 @@
     <name>Ex: DGram2Stream</name>
     <key>ex_datagram_to_stream</key>
     <import>import gras</import>
-    <make>gras.make('/ex/datagram_to_stream', $item_size)</make>
+    <make>gras.make('/grex/datagram_to_stream', $item_size)</make>
     <param>
         <name>Output Item Size</name>
         <key>item_size</key>

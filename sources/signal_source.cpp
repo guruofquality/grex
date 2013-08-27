@@ -148,7 +148,7 @@ static gras::Block *make_signal_source_ ## suffix(void) \
 { \
     return new SignalSource<type>(); \
 } \
-GRAS_REGISTER_FACTORY("/ex/signal_source_" #suffix, make_signal_source_ ## suffix)
+GRAS_REGISTER_FACTORY("/grex/signal_source_" #suffix, make_signal_source_ ## suffix)
 
 make_factory_function(fc32, std::complex<float>)
 make_factory_function(sc32, std::complex<boost::int32_t>)

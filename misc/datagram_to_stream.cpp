@@ -44,4 +44,4 @@ struct Datagram2Stream : gras::Block
     }
 };
 
-GRAS_REGISTER_FACTORY1("/ex/datagram_to_stream", Datagram2Stream, size_t)
+GRAS_REGISTER_FACTORY1("/grex/datagram_to_stream", Datagram2Stream, size_t)

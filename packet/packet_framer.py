@@ -125,4 +125,4 @@ class PacketFramer(gras.Block):
                     self.post_output_tag(0, tag)
             except: pass
 
-gras.register_factory("/ex/packet_framer", PacketFramer)
+gras.register_factory("/grex/packet_framer", PacketFramer)

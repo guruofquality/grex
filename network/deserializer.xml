@@ -8,7 +8,7 @@
     <name>Ex: Deserializer</name>
     <key>ex_deserializer</key>
     <import>import gras</import>
-    <make>gras.make('/ex/deserializer', $recover)</make>
+    <make>gras.make('/grex/deserializer', $recover)</make>
     <param>
         <name>Recovery</name>
         <key>recover</key>

@@ -185,4 +185,4 @@ void Scrambler::work(const InputItems &ins, const OutputItems &outs)
     this->produce(n);
 }
 
-GRAS_REGISTER_FACTORY0("/ex/scrambler", Scrambler)
+GRAS_REGISTER_FACTORY0("/grex/scrambler", Scrambler)

@@ -197,4 +197,4 @@ gras::Block *make_uhd_control_port(const std::string &)
 
 #endif //HAVE_UHD
 
-GRAS_REGISTER_FACTORY("/ex/uhd_control_port", make_uhd_control_port)
+GRAS_REGISTER_FACTORY("/grex/uhd_control_port", make_uhd_control_port)

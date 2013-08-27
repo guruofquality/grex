@@ -141,7 +141,7 @@ class test_serializer_blocks(unittest.TestCase):
 
         src0 = RandomStuffSource(tasks)
         src1 = RandomStuffSource(tasks)
-        ser = gras.make('/ex/serializer', 0, False) #mtu default, async ports
+        ser = gras.make('/grex/serializer', 0, False) #mtu default, async ports
         dst = PktMsgSinkPrinter()
 
         self.tb.connect(src0, (ser, 0))
@@ -174,8 +174,8 @@ class test_serializer_blocks(unittest.TestCase):
 
         src0 = RandomStuffSource(tasks0)
         src1 = RandomStuffSource(tasks1)
-        ser = gras.make('/ex/serializer', 0, False) #mtu default, async ports
-        deser = gras.make('/ex/deserializer', True) #true for recovery on
+        ser = gras.make('/grex/serializer', 0, False) #mtu default, async ports
+        deser = gras.make('/grex/deserializer', True) #true for recovery on
         dst0 = RandomStuffSink()
         dst1 = RandomStuffSink()
 
@@ -202,14 +202,14 @@ class test_serializer_blocks(unittest.TestCase):
         ]
 
         src = RandomStuffSource(tasks)
-        ser = gras.make('/ex/serializer', 0, True)
+        ser = gras.make('/grex/serializer', 0, True)
 
         #these two slice up the datagrams
         #can we recover from such harsh slicing?
-        d2s = gras.make('/ex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)
-        s2d = gras.make('/ex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
+        d2s = gras.make('/grex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)
+        s2d = gras.make('/grex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
 
-        deser = gras.make('/ex/deserializer', True) #true for recovery on
+        deser = gras.make('/grex/deserializer', True) #true for recovery on
         dst = RandomStuffSink()
 
         self.tb.connect(src, ser, d2s, s2d, deser, dst)

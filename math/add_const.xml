@@ -8,7 +8,7 @@
     <name>Ex: Add Const</name>
     <key>ex_add_const</key>
     <import>import gras</import>
-    <make>gras.make('/ex/add_const_v_$(type)', $value)</make>
+    <make>gras.make('/grex/add_const_v_$(type)', $value)</make>
     <callback>set_const($value)</callback>
     <param>
         <name>IO Type</name>

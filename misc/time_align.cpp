@@ -106,4 +106,4 @@ void TimeAlign::work(const InputItems &ins, const OutputItems &)
     }
 }
 
-GRAS_REGISTER_FACTORY1("/ex/time_align", TimeAlign, size_t)
+GRAS_REGISTER_FACTORY1("/grex/time_align", TimeAlign, size_t)

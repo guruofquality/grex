@@ -5,9 +5,9 @@ GRAS_TOOL(
     SOURCES
         signal_source.cpp signal_source.xml
         noise_source.cpp noise_source.xml
-    TARGET ex_sources
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_sources
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################

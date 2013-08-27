@@ -153,4 +153,4 @@ void Descrambler::work(const InputItems &ins, const OutputItems &outs)
     }
 }
 
-GRAS_REGISTER_FACTORY0("/ex/descrambler", Descrambler)
+GRAS_REGISTER_FACTORY0("/grex/descrambler", Descrambler)

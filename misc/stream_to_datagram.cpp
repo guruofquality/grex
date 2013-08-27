@@ -53,4 +53,4 @@ struct Stream2Datagram : gras::Block
     const size_t _mtu;
 };
 
-GRAS_REGISTER_FACTORY2("/ex/stream_to_datagram", Stream2Datagram, size_t, size_t)
+GRAS_REGISTER_FACTORY2("/grex/stream_to_datagram", Stream2Datagram, size_t, size_t)

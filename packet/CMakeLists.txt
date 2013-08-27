@@ -9,9 +9,9 @@ GRAS_TOOL(
         packet_framer.py packet_framer.xml
         packet_deframer.py packet_deframer.xml
         framer_sink.cpp #helper block for packet deframer
-    TARGET ex_packet
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_packet
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################

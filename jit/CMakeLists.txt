@@ -41,9 +41,9 @@ GRAS_TOOL(
         orc_block.cpp orc_block.xml
         opencl_block.cpp opencl_block.xml
         clang_block.xml
-    TARGET ex_jit
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_jit
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################

@@ -49,4 +49,4 @@ struct Delay : gras::Block
     int _delay_items;
 };
 
-GRAS_REGISTER_FACTORY1("/ex/delay", Delay, size_t)
+GRAS_REGISTER_FACTORY1("/grex/delay", Delay, size_t)

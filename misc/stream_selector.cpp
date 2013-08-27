@@ -68,4 +68,4 @@ struct StreamSelector : gras::Block
     std::vector<int> _paths;
 };
 
-GRAS_REGISTER_FACTORY1("/ex/stream_selector", StreamSelector, size_t)
+GRAS_REGISTER_FACTORY1("/grex/stream_selector", StreamSelector, size_t)

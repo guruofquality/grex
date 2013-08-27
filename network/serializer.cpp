@@ -169,4 +169,4 @@ struct Serializer : gras::Block
     std::vector<size_t> _seqs;
 };
 
-GRAS_REGISTER_FACTORY2("/ex/serializer", Serializer, size_t, bool)
+GRAS_REGISTER_FACTORY2("/grex/serializer", Serializer, size_t, bool)

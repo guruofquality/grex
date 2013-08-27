@@ -394,4 +394,4 @@ static gras::Block *make_opencl_block(const std::string &)
 
 #endif //HAVE_OPENCL
 
-GRAS_REGISTER_FACTORY("/ex/opencl_block", make_opencl_block)
+GRAS_REGISTER_FACTORY("/grex/opencl_block", make_opencl_block)

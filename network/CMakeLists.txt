@@ -15,9 +15,9 @@ GRAS_TOOL(
         serializer.cpp serializer.xml
         socket_message.cpp socket_message.xml
         tuntap.cpp tuntap.xml
-    TARGET ex_network
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_network
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################

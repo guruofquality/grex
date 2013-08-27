@@ -234,4 +234,4 @@ gras::Block *make_orc_block(void)
 
 #endif //HAVE_ORC
 
-GRAS_REGISTER_FACTORY("/ex/orc_block", make_orc_block)
+GRAS_REGISTER_FACTORY("/grex/orc_block", make_orc_block)

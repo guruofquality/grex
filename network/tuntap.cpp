@@ -220,4 +220,4 @@ gras::HierBlock *make_tuntap(const std::string &)
 
 #endif //is a linux
 
-GRAS_REGISTER_FACTORY("/ex/tuntap", make_tuntap)
+GRAS_REGISTER_FACTORY("/grex/tuntap", make_tuntap)

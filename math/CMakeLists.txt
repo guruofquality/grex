@@ -25,9 +25,9 @@ GRAS_TOOL(
         multiply.cpp multiply.xml
         add_const.cpp add_const.xml
         multiply_const.cpp multiply_const.xml
-    TARGET ex_math
-    DIRECTORY ex
-    COMPONENT ex
+    TARGET grex_math
+    DIRECTORY grex
+    COMPONENT grex
 )
 
 ########################################################################

@@ -8,7 +8,7 @@
     <name>Ex: Delay</name>
     <key>ex_delay</key>
     <import>import gras</import>
-    <make>gras.make('/ex/delay', $item_size)
+    <make>gras.make('/grex/delay', $item_size)
 self.$(id).set_delay($delay)
 </make>
     <callback>self.$(id).set_delay($delay)</callback>

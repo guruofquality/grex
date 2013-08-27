@@ -52,4 +52,4 @@ struct BurstTagger : gras::Block
     const size_t _sps;
 };
 
-GRAS_REGISTER_FACTORY1("/ex/burst_tagger", BurstTagger, size_t)
+GRAS_REGISTER_FACTORY1("/grex/burst_tagger", BurstTagger, size_t)

@@ -34,7 +34,7 @@ class test_noise_source(unittest.TestCase):
         self.tb = None
 
     def test_float32(self):
-        op = gras.make('/ex/noise_source_f32', 0)
+        op = gras.make('/grex/noise_source_f32', 0)
         op.set_waveform("GAUSSIAN")
         op.set_amplitude(10)
 

@@ -84,12 +84,12 @@ static gras::Block *make_subtract_v_ ## suffix(const size_t &vlen) \
 { \
     return new Subtract<type>(vlen); \
 } \
-GRAS_REGISTER_FACTORY("/ex/subtract_v_" #suffix, make_subtract_v_ ## suffix) \
+GRAS_REGISTER_FACTORY("/grex/subtract_v_" #suffix, make_subtract_v_ ## suffix) \
 static gras::Block *make_subtract_ ## suffix(void) \
 { \
     return new Subtract<type>(1); \
 } \
-GRAS_REGISTER_FACTORY("/ex/subtract_" #suffix, make_subtract_ ## suffix)
+GRAS_REGISTER_FACTORY("/grex/subtract_" #suffix, make_subtract_ ## suffix)
 
 make_factory_function(fc32_fc32, std::complex<float>)
 make_factory_function(sc32_sc32, std::complex<boost::int32_t>)

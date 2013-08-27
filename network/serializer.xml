@@ -8,7 +8,7 @@
     <name>Ex: Serializer</name>
     <key>ex_serializer</key>
     <import>import gras</import>
-    <make>gras.make('/ex/serializer', $mtu, $sync)</make>
+    <make>gras.make('/grex/serializer', $mtu, $sync)</make>
     <param>
         <name>MTU</name>
         <key>mtu</key>

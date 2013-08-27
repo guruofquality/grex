@@ -8,7 +8,7 @@
     <name>Ex: Packet Deframer</name>
     <key>ex_packet_deframer</key>
     <import>import gras</import>
-    <make>gras.make('/ex/packet_deframer',
+    <make>gras.make('/grex/packet_deframer',
     access_code=$access_code,
     threshold=$threshold,
 )</make>

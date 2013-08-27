@@ -99,4 +99,4 @@ gras::Block *make_uhd_status_port(const std::string &)
 
 #endif //HAVE_UHD
 
-GRAS_REGISTER_FACTORY("/ex/uhd_status_port", make_uhd_status_port)
+GRAS_REGISTER_FACTORY("/grex/uhd_status_port", make_uhd_status_port)

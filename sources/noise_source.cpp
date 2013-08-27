@@ -148,7 +148,7 @@ static gras::Block *make_noise_source_ ## suffix(const long &seed) \
 { \
     return new NoiseSource<type>(seed); \
 } \
-GRAS_REGISTER_FACTORY("/ex/noise_source_" #suffix, make_noise_source_ ## suffix)
+GRAS_REGISTER_FACTORY("/grex/noise_source_" #suffix, make_noise_source_ ## suffix)
 
 make_factory_function(fc32, std::complex<float>)
 make_factory_function(sc32, std::complex<boost::int32_t>)
