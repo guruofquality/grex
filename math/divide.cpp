@@ -13,7 +13,7 @@ template <typename type>
 struct Divide : gras::Block
 {
     Divide(const size_t vlen):
-        gras::Block("GrEx Divide"),
+        gras::Block("GREX Divide"),
         _vlen(vlen)
     {
         this->input_config(0).item_size = sizeof(type)*_vlen;

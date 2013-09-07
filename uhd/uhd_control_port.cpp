@@ -34,7 +34,7 @@ PMC_DECL_FALSE_EQUALITY(uhd::tune_request_t)
 struct UHDControlPort : gras::Block
 {
     UHDControlPort(uhd::usrp::multi_usrp::sptr usrp):
-        gras::Block("GrEx UHDControlPort")
+        gras::Block("GREX UHDControlPort")
     {
         _usrp = usrp;
         //register handlers
@@ -192,7 +192,7 @@ gras::Block *make_uhd_control_port(const std::string &addr)
 
 gras::Block *make_uhd_control_port(const std::string &)
 {
-    throw std::runtime_error("UHDControlPort::make - GrEx not build with UHD support");
+    throw std::runtime_error("UHDControlPort::make - GREX not build with UHD support");
 }
 
 #endif //HAVE_UHD

@@ -11,7 +11,7 @@
 struct Descrambler : gras::Block
 {
     Descrambler(void):
-        gras::Block("GrEx Scrambler"),
+        gras::Block("GREX Scrambler"),
         _polynom(1), _seed_value(1)
     {
         std::memset(&_lfsr, 0, sizeof(_lfsr));

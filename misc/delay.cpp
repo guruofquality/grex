@@ -6,7 +6,7 @@
 struct Delay : gras::Block
 {
     Delay(const size_t itemsize):
-        gras::Block("GrEx Delay")
+        gras::Block("GREX Delay")
     {
         this->input_config(0).item_size = itemsize;
         this->output_config(0).item_size = itemsize;

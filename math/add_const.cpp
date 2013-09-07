@@ -14,7 +14,7 @@ template <typename type>
 struct AddConst : gras::Block
 {
     AddConst(const std::vector<type> &vec, const bool vec_mode = true):
-        gras::Block("GrEx AddConst")
+        gras::Block("GREX AddConst")
     {
         this->input_config(0).item_size = sizeof(type)*vec.size();
         this->output_config(0).item_size = sizeof(type)*vec.size();

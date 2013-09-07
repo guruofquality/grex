@@ -16,7 +16,7 @@ template <typename type>
 struct SignalSource : gras::Block
 {
     SignalSource(void):
-        gras::Block("GrEx SignalSource"),
+        gras::Block("GREX SignalSource"),
         _index(0), _step(0),
         _table(wave_table_size),
         _offset(0.0), _scalar(1.0),

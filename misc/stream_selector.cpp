@@ -7,7 +7,7 @@
 struct StreamSelector : gras::Block
 {
     StreamSelector(const size_t itemsize):
-        gras::Block("GrEx StreamSelector")
+        gras::Block("GREX StreamSelector")
     {
         this->input_config(0).item_size = itemsize;
         this->output_config(0).item_size = itemsize;

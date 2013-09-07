@@ -16,7 +16,7 @@ template <typename type>
 struct Add : gras::Block
 {
     Add(const size_t vlen):
-        gras::Block("GrEx Add"),
+        gras::Block("GREX Add"),
         _vlen(vlen)
     {
         this->input_config(0).item_size = sizeof(type)*_vlen;

@@ -8,7 +8,7 @@
 struct Stream2Datagram : gras::Block
 {
     Stream2Datagram(const size_t itemsize, const size_t mtu):
-        gras::Block("GrEx Stream2Datagram"),
+        gras::Block("GREX Stream2Datagram"),
         _mtu(itemsize*(mtu/itemsize)) //ensure mtu is a multiple
     {
         //setup the input for streaming

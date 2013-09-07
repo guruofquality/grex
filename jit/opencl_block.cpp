@@ -126,7 +126,7 @@ static cl::Context make_context(const cl_device_type cl_dev_type, cl::Platform &
  * Block constructor
  **********************************************************************/
 OpenClBlock::OpenClBlock(const std::string &dev_type):
-    gras::Block("GrEx OpenClBlock"),
+    gras::Block("GREX OpenClBlock"),
     _extra_cl_buffer_allocs(0)
 {
 

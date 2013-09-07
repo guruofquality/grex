@@ -7,7 +7,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND GRAS_TOOL_LIBRARIES ${Boost_LIBRARIES})
 
 ########################################################################
-## GrEx Network Blocks
+## GREX Network Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES

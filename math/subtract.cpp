@@ -13,7 +13,7 @@ template <typename type>
 struct Subtract : gras::Block
 {
     Subtract(const size_t vlen):
-        gras::Block("GrEx Subtract"),
+        gras::Block("GREX Subtract"),
         _vlen(vlen)
     {
         this->input_config(0).item_size = sizeof(type)*_vlen;

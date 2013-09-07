@@ -34,7 +34,7 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND GRAS_TOOL_LIBRARIES ${Boost_LIBRARIES})
 
 ########################################################################
-## GrEx JIT Blocks
+## GREX JIT Blocks
 ########################################################################
 GRAS_TOOL(
     SOURCES

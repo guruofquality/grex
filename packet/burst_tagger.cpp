@@ -8,7 +8,7 @@
 struct BurstTagger : gras::Block
 {
     BurstTagger(const size_t sps):
-        gras::Block("GrEx BurstTagger"),
+        gras::Block("GREX BurstTagger"),
         _sps(sps)
     {
         this->input_config(0).item_size = 8;

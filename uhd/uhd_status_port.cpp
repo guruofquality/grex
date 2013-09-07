@@ -28,7 +28,7 @@
 struct UHDStatusPort : gras::Block
 {
     UHDStatusPort(uhd::usrp::multi_usrp::sptr usrp):
-        gras::Block("GrEx UHDStatusPort")
+        gras::Block("GREX UHDStatusPort")
     {
         _usrp = usrp;
         this->register_call("add_sensor", &UHDStatusPort::add_sensor);
@@ -94,7 +94,7 @@ gras::Block *make_uhd_status_port(const std::string &addr)
 
 gras::Block *make_uhd_status_port(const std::string &)
 {
-    throw std::runtime_error("UHDStatusPort::make - GrEx not build with UHD support");
+    throw std::runtime_error("UHDStatusPort::make - GREX not build with UHD support");
 }
 
 #endif //HAVE_UHD

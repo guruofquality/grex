@@ -17,7 +17,7 @@ template <typename type>
 struct MultiplyConst : gras::Block
 {
     MultiplyConst(const std::vector<type> &vec, const bool vec_mode = true):
-        gras::Block("GrEx MultiplyConst")
+        gras::Block("GREX MultiplyConst")
     {
         this->input_config(0).item_size = sizeof(type)*vec.size();
         this->output_config(0).item_size = sizeof(type)*vec.size();

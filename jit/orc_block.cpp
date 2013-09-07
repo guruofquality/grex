@@ -17,7 +17,7 @@
 struct OrcBlock : gras::Block
 {
     OrcBlock(void):
-        gras::Block("GrEx OrcBlock")
+        gras::Block("GREX OrcBlock")
     {
         _kernel_factor = 1.0;
         _production_factor = 1.0;

@@ -7,7 +7,7 @@
 struct TCPSocketReceiver : gras::Block
 {
     TCPSocketReceiver(const size_t mtu):
-        gras::Block("GrEx TCPSocketReceiver")
+        gras::Block("GREX TCPSocketReceiver")
     {
         this->output_config(0).reserve_items = mtu;
     }
@@ -49,7 +49,7 @@ struct TCPSocketReceiver : gras::Block
 struct TCPSocketSender : gras::Block
 {
     TCPSocketSender(void):
-        gras::Block("GrEx TCPSocketSender")
+        gras::Block("GREX TCPSocketSender")
     {
         //NOP
     }
@@ -96,7 +96,7 @@ struct TCPSocketMessage : gras::HierBlock
         const std::string &port,
         const size_t mtu
     ):
-        gras::HierBlock("GrEx TCPSocketMessage")
+        gras::HierBlock("GREX TCPSocketMessage")
     {
         asio::ip::tcp::resolver resolver(_io_service);
         asio::ip::tcp::resolver::query query(asio::ip::tcp::v4(), addr, port);

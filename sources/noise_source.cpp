@@ -17,7 +17,7 @@ template <typename type>
 struct NoiseSource : gras::Block
 {
     NoiseSource(const long seed):
-        gras::Block("GrEx Noise Source"),
+        gras::Block("GREX Noise Source"),
         _index(0),
         _table(wave_table_size),
         _offset(0.0), _scalar(1.0), _factor(9.0),
