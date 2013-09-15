@@ -49,8 +49,7 @@ class test_packet(unittest.TestCase):
         src = TestUtils.VectorSource(numpy.int32, src_data)
         dst = TestUtils.VectorSink(numpy.int32)
 
-        from gnuradio import gr
-        unpack = gr.packed_to_unpacked_bb(1, gr.GR_MSB_FIRST)
+        unpack = gras.make('/grex/unpack_bytes')
 
         s2d = gras.make('/grex/stream_to_datagram', numpy.dtype(numpy.int32).itemsize, 40) #mtu 40 bytes
         d2s = gras.make('/grex/datagram_to_stream', numpy.dtype(numpy.int32).itemsize)

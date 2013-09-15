@@ -9,6 +9,7 @@ GRAS_TOOL(
         packet_framer.py packet_framer.xml
         packet_deframer.py packet_deframer.xml
         framer_sink.cpp #helper block for packet deframer
+        unpack_bytes.cpp #used in packet unit test
     TARGET grex_packet
     DIRECTORY grex
     COMPONENT grex
